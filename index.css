@@ -1,3 +1,264 @@
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 #heading{
     color: brown;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid  black;
+}
+
+.logo{
+    width: 80px;
+    padding: 5px;
+}
+
+.nav-items > ul{
+    display: flex;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    
+}
+.res-card{
+    width: 185px;
+    margin: 14px;
+   padding: 5px;
+   height: 365px;
+   
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+    
+}
+.shimmer-card{
+    width: 185px;
+    margin: 14px;
+   padding: 5px;
+   height: 365px;
+   background-color: beige;
+
+}
+.res-card:hover{
+ cursor: pointer;
+ border: 1px solid #d1d1be;
+}
+.search{
+    padding: 10px;
+    align-self: center;
+}
+.res-card > img{
+    width: 100%;
+    height: 40%;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* Header */
+.login-button{
+  height: 2rem;
+  display: flex;
+align-items: center;
+margin-top: .5rem;
+margin-right: 0.4rem;
+cursor: pointer;
+}
+
+/* body */
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter input {
+    margin-right: 3px;
+}
+/* Restauant Menu*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+align-items: center; 
+}
+.card1{
+  
+    width: 60%;
+    height: 12rem;
+    border: 1px solid #c0c0c0;
+    border-radius: 13px;
+    box-shadow: h-shadow v-shadow blur spread  #c0c0c0 inset;
+    /* background-color: red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+   padding-bottom: 3rem;
+   padding-left: 1.4rem;
+   
+}
+.rating-para{
+  display: flex;
+  align-items: center;
+}
+.star{
+    background-color: white;
+    color: green;
+}
+.title{
+    display: flex;
+ margin-right: 28rem;
+}
+.direction{
+    color: #c0c0c0;
+}
+.orange-color{
+    color: orangered;
+}
+.menu-title{
+    text-align: center;
+    padding-top: 2rem;
+}
+.menu-title p {
+    color: grey;
+}
+.search-bar{
+border: none;
+outline: none; 
+background-color: lightgray;
+width: 80%;
+text-align: center;
+color: grey;
+font-size: larger;
+font-weight: bold;
+
+}
+.input-field-container{
+    width: 35rem;
+    background-color: lightgray;
+    border-radius: 30px;
+
+}
+.input-field-container button{
+    border: none;
+    background-color:lightgray;
+
+}
+ .search{
+    color: white;
+}
+.recommended{
+    display: flex;
+   width: 60%;
+margin-top: 3rem;
+justify-content: space-between;
+}
+.recommended button {
+    border: none;
+    background-color: white;
+  
+}
+.restaurant-items-container{
+    width: 60%;
+display: flex;
+/* align-items: center; */
+/* justify-content: space-between; */
+flex-direction: column;
+padding: 1rem;
+}
+.items-image{
+    margin-right: 1rem;
+}
+.rating-star{
+    display: flex;
+   align-items: center;
+   color: green;
+}
+/* Shimmer1 */
+.shimmer1-container{
+    width: 60%;
+    height: 1rem;
+    background-color: lightgray;
+}
+.line{
+    border: 1px solid lightgray ;
+    width: 100%;
+   
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.image-container img
+{
+   width:8rem;
+   height: 8rem;
+   border: none;
+}
+.items-container{
+    display: flex;
+    flex-direction: column;
+}
+.items-container-1{
+    display: flex;
+    justify-content: space-between;
+}
+.button-add{
+    margin-top: .3rem;
+    background-color: green;
 }
